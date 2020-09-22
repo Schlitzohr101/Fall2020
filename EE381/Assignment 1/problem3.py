@@ -25,10 +25,11 @@ def solution3():
     for i in range(100000):
         if get50Heads():
             wins+=1
-        losses+=1
-    plt.stem(["wins","losses"],[wins,losses],use_line_collection=True)
-    plt.show()
-    return (wins/losses)*100
+        else:
+            losses+=1
+    # plt.stem(["wins","losses"],[wins,losses],use_line_collection=True)
+    # plt.show()
+    return (wins/100000)*100
 
 
 probability = solution3()

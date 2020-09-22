@@ -28,7 +28,12 @@ for i in range(0, nRolls):
     r = nSidedDie(p)
     outcomes[r] = outcomes[r] + 1
 
-plt.stem(p,outcomes,use_line_collection=True)
+print(outcomes)
+
+plt.stem([1,2,3,4,5,6,7],outcomes,use_line_collection=True)
+plt.title("Steam plot: # of Occurences per each side of 7-sided die")
+plt.ylabel("# Occurences")
+plt.xlabel("Sides of die")
 plt.show()
 
 for temp in outcomes:
